@@ -44,10 +44,6 @@ for (let i = 0; i < boxes.length; i++) {
                 }
                 checkWinCondition();
             }
-
-            // checa quem venceu
-
-
         }
     })
 }
@@ -175,12 +171,12 @@ function declareWinner(winner) {
 
     if (winner == 'x') {
         scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
-        msg = 'Jogador Roxo venceu.';
+        msg = 'Purple Wins.';
     } else if (winner == 'o') {
         scoreboardO.textContent = parseInt(scoreboardO.textContent) + 1;
-        msg = 'Jogador Amarelo venceu.';
+        msg = 'Yellow Wins.';
     } else {
-        msg = 'Empate';
+        msg = 'Draw.';
     }
 
     messageText.innerHTML = msg;
